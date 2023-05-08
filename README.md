@@ -37,7 +37,7 @@ npx cap sync
 import { CapacitorSecurityProvider, SecurityProviderStatus } from '@capacitor-community/security-provider';
 ...
     const result = await CapacitorSecurityProvider.installIfNeeded();
-    if (!result.status == SecurityProviderStatus.Success && result.status != SecurityProviderStatus.NotImplemented) {
+    if (result.status !== SecurityProviderStatus.Success && result.status != SecurityProviderStatus.NotImplemented) {
         // Do not proceed. The Android Security Provider failed to verify / install.
     }
 ```
