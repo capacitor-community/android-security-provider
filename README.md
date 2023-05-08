@@ -34,13 +34,15 @@ npx cap sync
 ## Usage
 
 ```typescript
-import { CapacitorSecurityProvider } from '@capacitor-community/security-provider';
+import { CapacitorSecurityProvider, SecurityProviderStatus } from '@capacitor-community/security-provider';
 ...
     const result = await CapacitorSecurityProvider.installIfNeeded();
     if (!result.status == SecurityProviderStatus.Success && result.status != SecurityProviderStatus.NotImplemented) {
         // Do not proceed. The Android Security Provider failed to verify / install.
     }
 ```
+
+See [Sample Capacitor 5 application](https://github.com/dtarnawsky/android-security-provider) that uses this plugin.
 
 ## API
 
