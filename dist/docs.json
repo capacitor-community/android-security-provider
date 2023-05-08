@@ -1,0 +1,58 @@
+{
+  "api": {
+    "name": "CapacitorSecurityProviderPlugin",
+    "slug": "capacitorsecurityproviderplugin",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "installIfNeeded",
+        "signature": "() => Promise<{ status: SecurityProviderStatus; }>",
+        "parameters": [],
+        "returns": "Promise<{ status: SecurityProviderStatus; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "SecurityProviderStatus"
+        ],
+        "slug": "installifneeded"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [],
+  "enums": [
+    {
+      "name": "SecurityProviderStatus",
+      "slug": "securityproviderstatus",
+      "members": [
+        {
+          "name": "Success",
+          "value": "'Success'",
+          "tags": [],
+          "docs": "This indicates that the provider was already up to date or was successfully updated"
+        },
+        {
+          "name": "NotImplemented",
+          "value": "'NotImplemented'",
+          "tags": [],
+          "docs": "This will occur on iOS and Web as these platforms cannot call the Android Security Provider"
+        },
+        {
+          "name": "GooglePlayServicesRepairableException",
+          "value": "'GooglePlayServicesRepairableException'",
+          "tags": [],
+          "docs": "Indicates that Google Play services is out of date, disabled, etc.\nIf this is returned a native dialog will notify and prompt the user to update."
+        },
+        {
+          "name": "GooglePlayServicesNotAvailableException",
+          "value": "'GooglePlayServicesNotAvailableException'",
+          "tags": [],
+          "docs": "Indicates a non-recoverable error; the ProviderInstaller can't\ninstall an up-to-date Provider.\nYou should abort running the application."
+        }
+      ]
+    }
+  ],
+  "typeAliases": [],
+  "pluginConfigs": []
+}
