@@ -1,5 +1,5 @@
 {
-  "name": "capacitor-plugin-security-provider",
+  "name": "@capacitor-community/security-provider",
   "version": "5.0.0",
   "description": "Capacitor plugin with methods to check and update the Android Security Provider",
   "main": "dist/plugin.cjs.js",
