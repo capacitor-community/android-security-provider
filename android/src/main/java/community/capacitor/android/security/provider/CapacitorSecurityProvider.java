@@ -35,9 +35,6 @@ public class CapacitorSecurityProvider {
             status = "GooglePlayServicesNotAvailableException";
         }
 
-        // If this is reached, you know that the provider was already up to date
-        // or was successfully updated.
-        status = "Success";
         return status;
     }
 }
