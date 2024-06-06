@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/maintenance/yes/2023?style=flat-square" />
+  <img src="https://img.shields.io/maintenance/yes/2024?style=flat-square" />
   <a href="https://www.npmjs.com/package/@capacitor-community/security-provider"><img src="https://img.shields.io/npm/l/@capacitor-community/security-provider?style=flat-square" /></a>
 <br>
   <a href="https://www.npmjs.com/package/@capacitor-community/security-provider"><img src="https://img.shields.io/npm/dw/@capacitor-community/security-provider?style=flat-square" /></a>
