@@ -25,7 +25,7 @@ var capacitorSecurityProvider = (function (exports, core) {
     })(exports.SecurityProviderStatus || (exports.SecurityProviderStatus = {}));
 
     const CapacitorSecurityProvider = core.registerPlugin('CapacitorSecurityProvider', {
-        web: () => Promise.resolve().then(function () { return web; }).then(m => new m.CapacitorSecurityProviderWeb()),
+        web: () => Promise.resolve().then(function () { return web; }).then((m) => new m.CapacitorSecurityProviderWeb()),
     });
 
     class CapacitorSecurityProviderWeb extends core.WebPlugin {
@@ -40,8 +40,6 @@ var capacitorSecurityProvider = (function (exports, core) {
     });
 
     exports.CapacitorSecurityProvider = CapacitorSecurityProvider;
-
-    Object.defineProperty(exports, '__esModule', { value: true });
 
     return exports;
 
