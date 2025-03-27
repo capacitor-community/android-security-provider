@@ -42,8 +42,6 @@ import { CapacitorSecurityProvider, SecurityProviderStatus } from '@capacitor-co
     }
 ```
 
-See [Sample Capacitor 5 application](https://github.com/dtarnawsky/android-security-provider) that uses this plugin.
-
 ## API
 
 <docgen-index>
